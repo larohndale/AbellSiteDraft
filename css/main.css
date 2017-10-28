@@ -2,44 +2,44 @@
 Base Elements  
 **********************************************/
 
-
 * {
     box-sizing: border-box;
-  }
+}
 
 body {
-    line-height: 1.6em; 
-    color: black; 
+    line-height: 1.6em;
+    color: black;
     font-family: 'Helvitica', sans-serif;
 }
 
-p , 
+p,
 li {
-    font-size: .95em; 
+    font-size: .95em;
     margin-bottom: 1.8em;
 }
 
 h2 {
-    margin-top: 0; 
+    margin-top: 0;
 }
-
 
 a {
     text-decoration: none;
-    color: black; 
-    padding-bottom: .5em; 
+    color: black;
+    padding-bottom: .5em;
 }
-    a:hover {
-        color: red;  
+
+a:hover {
+    color: red;
 }
 
 img {
-    max-width: 100%; 
+    max-width: 100%;
 }
 
-main-footer  {
-    color: white; 
+main-footer {
+    color: white;
 }
+
 
 /* ID  */
 
@@ -52,27 +52,26 @@ main-footer  {
 Base Class Styles 
 **********************************************/
 
+
 /* Navigation */
 
-
 .name {
-    font-size: 1.6em; 
-    margin:0; 
+    font-size: 1.6em;
+    margin: 0;
 }
 
 .main-nav {
     margin-top: 5px;
     font-size: 1.1em;
-    font-weight: bold; 
+    font-weight: bold;
     display: block;
 }
 
 .name,
 .main-nav a {
-    display: block; 
-    text-align: center; 
+    display: block;
+    text-align: center;
     /* padding: 1em 1.5em;  */
-
     /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;  
@@ -80,13 +79,13 @@ Base Class Styles
 }
 
 .main-nav a {
-    font-size: .95em; 
-    color: black; 
-    text-transform: uppercase; 
+    font-size: .95em;
+    color: black;
+    text-transform: uppercase;
 }
 
 .main-nav a:hover {
-    color:#fff;
+    color: #fff;
     background-color: #CE0505;
 }
 
@@ -96,16 +95,15 @@ Containers
 **********************************************/
 
 .main-header {
-    padding-top: 1em; 
-    padding-bottom: .5em; 
+    padding-top: 1em;
+    padding-bottom: .5em;
     /* background-image: url("3906338-black-and-silver-background-wallpaper.jpg"); */
-
 }
 
 .main-footer {
-    text-align: center; 
-  
+    text-align: center;
 }
+
 
 /* #header-img {
 background-image: "img/bannerpic.jpg";
@@ -114,50 +112,47 @@ background-repeat: no-repeat;
 } */
 
 .banner {
-    
     /* background-color: #ADABAB; */
     /* background: #851122; */
-    padding: 3.2em 0; 
-    margin-bottom: 60px; 
+    padding: 3.2em 0;
+    margin-bottom: 60px;
 }
 
 .bannermeet {
-    width: 100%; 
-    padding: 0; 
-    margin-bottom: 1em; 
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1em;
 }
 
 .col {
     padding-left: 1em;
-    padding-right: 1em; 
-    margin-bottom: 1.8em; 
+    padding-right: 1em;
+    margin-bottom: 1.8em;
 }
 
-
-.primary, 
+.primary,
 .secondary {
-    width: 80%; 
+    width: 80%;
 }
 
-.main-footer, .main-footer a {
+.main-footer,
+.main-footer a {
     background-color: #000;
-    color: white;  
-    padding: .3em 0; 
-    margin-top: -10px; 
+    color: white;
+    padding: .3em 0;
+    margin-top: -10px;
 }
+
 
 /* Page Elements  */
 
-
 .logo {
-  
-    width: 190px; 
+    width: 190px;
 }
 
 .headline {
-    margin-bottom: 0;  
+    margin-bottom: 0;
 }
-
 
 
 /**********************************************
@@ -165,147 +160,130 @@ Media Queries
 **********************************************/
 
 @media screen and (min-width: 1200px) {
-    
-        body {
-            padding-top: 68px; 
-        }
-
-        .main-header {
-            position: fixed; 
-            background: #fff;
-            box-shadow: 0 1px 4px rgba(0,0,0,.4);
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            padding: .5em; 
-          }
-        .name ,
-        .col {
-            float: left; 
-        }
-        .banner {
-            
-            /* background-color: #ADABAB; */
-            /* background: #851122; */
-            padding: 7.5em 0; 
-            margin-bottom: 60px; 
-        }
-        
-        .primary,
-        .secondary, {
-            width: 80%;
-        }
-
-        .main-nav {
-            display: block; 
- 
-        }
-        
-        .main-nav li {
-            display: inline-block;
-            margin-left: 15px;
-        }
-        .tagline {
-            font-size: 1.4em;
-        }
-        /* ---- Float clearfix ---- */
-        .clearfix::after {
-            content: " ";
-            display: table;
-            clear: both;
-        }
+    body {
+        padding-top: 68px;
     }
-
-    @media screen and (min-width: 850px) {
-        
-            body {
-                padding-top: 68px; 
-            }
-    
-            .main-header {
-                position: fixed; 
-                background: #fff;
-                box-shadow: 0 1px 4px rgba(0,0,0,.4);
-                top: 0;
-                width: 100%;
-                z-index: 1000;
-            }
-            .container {
-                width: 90%;
-                margin: 0 auto;
-                padding: .5em; 
-              }
-            .name ,
-            .col {
-                float: left; 
-            }
-            .banner {
-                
-                /* background-color: #ADABAB; */
-                /* background: #851122; */
-                padding: 7.5em 0; 
-                margin-bottom: 60px; 
-            }
-            
-            .primary,
-            .secondary, {
-                width: 80%;
-            }
-    
-            .main-nav {
-                display: block; 
-     
-            }
-            
-            .main-nav li {
-                display: inline-block;
-                margin-left: 15px;
-            }
-            .tagline {
-                font-size: 1.4em;
-            }
-            /* ---- Float clearfix ---- */
-            .clearfix::after {
-                content: " ";
-                display: table;
-                clear: both;
-            }
-        }
-    
-    
-    @media (min-width: 600px) {
-        .container {
-            width: 80%;
-            max-width: 1150px;
-            margin: 0 auto; 
-            margin-top: 1em; 
-        }
-
-        .name,
-        .main-nav a {
-            display: block; 
-            text-align: center; 
-            padding: .5em .5em;
-        }
-        
-        .primary,
-        .secondary {
-            width: 80%;
-        }
-        
-        .contact {
-            width: 50%;
-        }
-    } 
-
-    .logo {
-        display: block;
-        max-width: 200px;
-        margin: 3em auto;
+    .main-header {
+        position: fixed;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    .container {
         width: 90%;
-        
+        margin: 0 auto;
+        padding: .5em;
     }
+    .name,
+    .col {
+        float: left;
+    }
+    .banner {
+        /* background-color: #ADABAB; */
+        /* background: #851122; */
+        padding: 7.5em 0;
+        margin-bottom: 60px;
+    }
+    .primary,
+    .secondary,
+    {
+        width: 80%;
+    }
+    .main-nav {
+        display: block;
+    }
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .tagline {
+        font-size: 1.4em;
+    }
+    /* ---- Float clearfix ---- */
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    body {
+        padding-top: 68px;
+    }
+    .main-header {
+        position: fixed;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: .5em;
+    }
+    .name,
+    .col {
+        float: left;
+    }
+    .banner {
+        /* background-color: #ADABAB; */
+        /* background: #851122; */
+        padding: 7.5em 0;
+        margin-bottom: 60px;
+    }
+    .primary,
+    .secondary,
+    {
+        width: 80%;
+    }
+    .main-nav {
+        display: block;
+    }
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .tagline {
+        font-size: 1.4em;
+    }
+    /* ---- Float clearfix ---- */
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        max-width: 1150px;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    .name,
+    .main-nav a {
+        display: block;
+        text-align: center;
+        padding: .5em .5em;
+    }
+    .primary,
+    .secondary {
+        width: 80%;
+    }
+    .contact {
+        width: 50%;
+    }
+}
+
+.logo {
+    display: block;
+    max-width: 200px;
+    margin: 3em auto;
+    width: 90%;
+}
