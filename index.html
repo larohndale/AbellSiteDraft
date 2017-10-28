@@ -1,80 +1,111 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <title>Vincent Abell Contracting</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    <header id="top" class="main-header">
-        <span class="title">Vincent Abell Contracting</span>
-        <h1>Louisville Remodeling Experts</h1>
-    </header>
+<!-- This allows for the user to stay on the page and slowly scroll down to the bottom of the page jQuery -->
 
-    <nav class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="abellapproach.html">Abell Approach</a></li>
-            <li><a href="meettheexperts.html">Meet the Experts</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="primary-content t-border">
-        <h2><a href="aboutus.html">About Us</a></h2>
-        <p clas="intro">Vincent Abell Contracting is a family owned and operated full service General Contracting design-build firm specializing
-            in custom remodeling & renovations in Louisville and surround counties. Services include: home additions, historic
-            preservation, kitchens, bathrooms, basements, decks, porches, dormer additions, screen rooms, load bearing wall
-            removal, room additions, home improvements, and more.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 
 
-        <p class="intro">Since 2000, Vincent Abell Contracting's professional and experienced team members have provided expert remodeling
-            services to many of Louisville's most established neighborhoods including the Highlands, St. Matthews, Audubon
-            Park, Anchorage, Prospect, Glenview, Indian Hills, Old Louisville, Crestwood, Pewee Valley, Crescent Hill, and
-            more. </p>
-    </div>
+<body><!-- visible content -->
 
-    <div class="secondary-content t-border">
-        <h3><a href="abellapproach.html">Abell Approach</a></h3>
-        <ol class="abell-approach">
-            <li>Initial Consultation: Complimentary site visit by Brad Abell. We will discuss what you want to do, when you want
-                to do it, and project budget. </li>
-            <li>Design: Every great project starts with a vision. It is our job to help shape your vision in to reality. The
-                design agreement is the first step in putting the plan in to action. We offer professional design-build services
-                catered to your personal wish list and budget. </li>
-            <li>Site Visit Walk Through: After detailed construction drawings are created, our team members and required specialty
-                contractors will perform a site visit.</li>
-            <li>Construction agreement: A detailed scope of work and bid package is put together for the project based on the
-                completed drawings and agreed upon budget.</li>
-            <li>Construction: We pull the permit and start construciton.</li>
-        </ol>
-    </div>
+    <img class="logo" src="img/abell_header_hammer.gif" alt="Louisville Remodeling Experts">
+    
+                            
+    
+            <div class="wrap">
+                    <header id="top" class="main-header">
+                            <div class="conatiner clearfix">
+                                    <ul class="main-nav">
+                                            <!-- navigation links -->
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="aboutus.html">About Us</a></li>
+                                            <li><a href=portfolio.html>Portfolio</a></li>
+                                            <li><a href="abellapproach.html">Abell Approach</a></li>
+                                            <li><a href="meettheexperts.html">Meet the Experts</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                            </div>
+                    </header>
+                    <!--/ .main-heder-->
+            
+            <div class="container clearfix">
+            
+                <div class="secondary col">
+                    <h2><a href="aboutus.html">About Us</a></h2>
+                    <p>Vincent Abell Contracting is a family owned and operated full service General Contracting design-build firm specializing
+                in custom remodeling & renovations in Louisville and surround counties. Services include: home additions,
+                historic preservation, kitchens, bathrooms, basements, decks, porches, dormer additions, screen rooms, load
+                bearing wall removal, room additions, home improvements, and more.</p>
+            
+                <p>Since 2000, Vincent Abell Contracting's professional and experienced team members have provided expert remodeling
+                services to many of Louisville's most established neighborhoods including the Highlands, St. Matthews, Audubon
+                Park, Anchorage, Prospect, Glenview, Indian Hills, Old Louisville, Crestwood, Pewee Valley, Crescent Hill,
+                and more. </p>
+    </div><!--/. about us column -->
 
-    <!-- <a href="http://www.angieslist.com/companylist/us/ky/crestwood/vincent-abell-contracting-inc-reviews-2289404.aspx?cid=ssabadge"><img src ="http://www.angieslist.com/webbadge/70f9d181e2da1148067e806cac9d745a.png"</a> **/ -->
+        <div class="primary col">
+            <h2><a href="abellapproach.html">Abell Approach</a></h2>
+            <ol id="abell-approach">
+                <li>1. Initial Consultation: Complimentary site visit by Brad Abell. We will discuss what you want to do, when you
+                    want to do it, and project budget. </li>
+                <li>2. Design: Every great project starts with a vision. It is our job to help shape your vision in to reality.
+                    The design agreement is the first step in putting the plan in to action. We offer professional design-build
+                    services catered to your personal wish list and budget. </li>
+                <li>3. Site Visit Walk Through: After detailed construction drawings are created, our team members and required
+                    specialty contractors will perform a site visit.</li>
+                <li>4.Construction agreement: A detailed scope of work and bid package is put together for the project based on
+                    the completed drawings and agreed upon budget.</li>
+                <li>5. Construction: We pull the permit and start construciton.</li>
+            </ol>
+        </div><!--/. primary-content-->
 
-
-
-    <footer class="main-footer">
-        <p><strong>Phone: </strong> <br /> Call | Text Brad Abell: 502-641-7756</p>
-
-        <p><strong>Email: </strong> <br />
-            <a href="mailto:"><a>babell.vac@gmail.com</a></p>
         
+<div class="col">
+    <h2>How To Contact Us</h2>
+    <div class="contact"><!-- contact column-->
+            <p><strong>Phone: </strong> <br /> Call | Text Brad Abell: 502-641-7756</p>
+
+            <p><strong>Email: </strong> <br />
+                <a href="mailto:"><a>babell.vac@gmail.com</a></p>
+
             <p><strong>Address: </strong></p>
-            <address>Vincent Abell Contracting<br /> 
-                1850 Taylor Ave. Suite 4. <br /> 
-                Louisville, Ky 40213 <br />
-        </address>
-        </footer>
-        <small>
-                <footer class="final-footer">&copy;2017 Vincent Abell Contracting<br />
+            <address>Vincent Abell Contracting<br /> 1850 Taylor Ave. Suite 4. <br /> Louisville, Ky 40213 <br />
+            </address>
+</div><!-- contact column -->
+</div>
+</div><!--/.container--> 
+</div><!-- /.wrap -->
+
+<div id="contact" class="map"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401000.2381700974!2d-85.84401950062328!3d38.26061132361552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869905bee8c88d5%3A0x17d6c4a49da35842!2sVincent+Abell+Contracting+Inc!5e0!3m2!1sen!2sus!4v1508281872216" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div><!-- viewable map for the user to find address quickly. -->
+
+                <footer class="main-footer"><span>&copy;2017 Vincent Abell Contracting<br /><small>
                     Developed By: Dominque Cox</p>
                     <a href="#top">Back to top &raquo;</a>
-                </small>
-    </footer>
-</body>
-
+                </small></span>
+        </footer>
+</body> 
 </html>
