@@ -7,6 +7,12 @@ Base Elements
 }
 
 body {
+    /* Trying to add background image to MeetTheExperts Page (still tagged in html) */
+    background-image: url('../../img/abellbackground.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    color: #cccccc;
     line-height: 1.6em;
     color: black;
     font-family: 'Helvitica', sans-serif;
@@ -54,12 +60,7 @@ main-footer {
 /**********************************************
 Base Class Styles 
 **********************************************/
-/* Trying to add background image to MeetTheExperts Page (still tagged in html) */
-/* .wallpaper {
-    background-image: url("img/abellbackground.jpg");
-    background-color: #cccccc;
 
-} */
 
 /****************
  Navigation 
