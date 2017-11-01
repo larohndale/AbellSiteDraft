@@ -10,6 +10,7 @@ body {
     line-height: 1.6em;
     color: black;
     font-family: 'Helvitica', sans-serif;
+    
 }
 
 p,
@@ -41,7 +42,9 @@ main-footer {
 }
 
 
-/* ID  */
+/***********************************************
+ ID  
+ ************************************************/
 
 #sideh2 {
     margin-top: 1em;
@@ -51,9 +54,16 @@ main-footer {
 /**********************************************
 Base Class Styles 
 **********************************************/
+/* Trying to add background image to MeetTheExperts Page (still tagged in html) */
+/* .wallpaper {
+    background-image: url("img/abellbackground.jpg");
+    background-color: #cccccc;
 
+} */
 
-/* Navigation */
+/****************
+ Navigation 
+ ****************/
 
 .name {
     font-size: 1.6em;
@@ -61,7 +71,8 @@ Base Class Styles
 }
 
 .main-nav {
-    margin-top: 5px;
+    margin-top: 0;
+    height: 40px;
     font-size: 1.1em;
     font-weight: bold;
     display: block;
@@ -71,11 +82,6 @@ Base Class Styles
 .main-nav a {
     display: block;
     text-align: center;
-    /* padding: 1em 1.5em;  */
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;  
-    text-decoration: none; */
 }
 
 .main-nav a {
@@ -94,34 +100,11 @@ Base Class Styles
 Containers
 **********************************************/
 
-.main-header {
-    padding-top: 1em;
-    padding-bottom: .5em;
-    /* background-image: url("3906338-black-and-silver-background-wallpaper.jpg"); */
-}
+
+
 
 .main-footer {
     text-align: center;
-}
-
-
-/* #header-img {
-background-image: "img/bannerpic.jpg";
-background-size: cover;
-background-repeat: no-repeat;
-} */
-
-.banner {
-    /* background-color: #ADABAB; */
-    /* background: #851122; */
-    padding: 3.2em 0;
-    margin-bottom: 60px;
-}
-
-.bannermeet {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 1em;
 }
 
 .col {
@@ -139,7 +122,7 @@ background-repeat: no-repeat;
 .main-footer a {
     background-color: #000;
     color: white;
-    padding: .3em 0;
+    padding: .2em 0;
     margin-top: -10px;
 }
 
@@ -180,12 +163,7 @@ Media Queries
     .col {
         float: left;
     }
-    .banner {
-        /* background-color: #ADABAB; */
-        /* background: #851122; */
-        padding: 7.5em 0;
-        margin-bottom: 60px;
-    }
+
     .primary,
     .secondary,
     {
@@ -208,6 +186,10 @@ Media Queries
         clear: both;
     }
 }
+
+/****************
+850px
+ ****************/
 
 @media screen and (min-width: 850px) {
     body {
@@ -230,12 +212,7 @@ Media Queries
     .col {
         float: left;
     }
-    .banner {
-        /* background-color: #ADABAB; */
-        /* background: #851122; */
-        padding: 7.5em 0;
-        margin-bottom: 60px;
-    }
+    
     .primary,
     .secondary,
     {
@@ -259,6 +236,12 @@ Media Queries
     }
 }
 
+
+/****************
+ 600px
+ ****************/
+
+
 @media (min-width: 600px) {
     .container {
         width: 80%;
@@ -266,6 +249,9 @@ Media Queries
         margin: 0 auto;
         margin-top: 1em;
     }
+
+ 
+
     .name,
     .main-nav a {
         display: block;

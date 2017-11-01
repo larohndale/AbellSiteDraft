@@ -10,41 +10,66 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="css/strap.css">
 </head>
 
-<body>
+<body class="wallpaper">
+       
+        
     <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg  navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Abell Contracting</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+    <nav class="navbar sticky-top navbar-expand-lg  navbar-dark bg-danger">
+        <a class="navbar-brand" href="#">ABELL CONTRACTING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="aboutus.html">About Team Abell</a>
+                    <a class="nav-link" href="aboutus.html">About Team Abell</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="abellapproach.html">Abell Approach</a>
+                    <a class="nav-link" href="meettheexperts.html">Meet The Experts</a>
                 </li>
                 <li class="nav-item">
-                        <a class="nav-link" href="meettheexperts.html">Meet The Experts</a>
-                      </li>
-                      <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                          </li>
-              </ul>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+      
+    <!-- jumbotron -->
+  
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
+            <div class="container text-sm-center pt-5">
+              <h1 class="display-2">Louisville Remodeling Experts</h1>
+              <p class="lead">Contact us now to set up your free consultaion.</p>        
+
+              <!-- buttons in jumbotron -->
+
+              <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
+                <button type="button" class="btn btn-primary btn-lg">Consultation</button>
+                <a class="btn btn-light btn-lg" href="#speakers">Meet the Team</a>
+              </div>        
             </div>
-          </nav>
+          </div>
+  
+          <!-- container -->
 
     <div class="container pt-4">
-        <!-- about -->
+       
+       
+        <!-- About -->
+  
         <div class="row">
             <div class="col-lg">
                 <h3 class="mb-4">Louisville Remodeling Experts</h3>
@@ -58,8 +83,12 @@
                     services to many of Louisville's most established neighborhoods including the Highlands, St. Matthews,
                     Audubon Park, Anchorage, Prospect, Glenview, Indian Hills, Old Louisville, Crestwood, Pewee Valley, Crescent
                     Hill, and more. </p>
-            </div>
-            <div class="col-lg">
+            </div><!--/about -->
+  
+  
+            <!-- Abell Approach -->
+            
+  <div class="col-lg">
                 <h3 class="mb-4">Abell Approach</h3>
                 <ol>
                     <li> Initial Consultation: Complimentary site visit by Brad Abell. We will discuss what you want to do, when
@@ -72,21 +101,48 @@
                     <li> Construction agreement: A detailed scope of work and bid package is put together for the project based
                         on the completed drawings and agreed upon budget.</li>
                     <li> Construction: We pull the permit and start construciton.</li>
-                </ol>
-                <!-- abell approach -->
+                </ol> 
+            </div><!-- /abell approach -->
+  
+            
+            <!-- Meet the team -->
+
+            <h1 class="display-4 text-center my-5 text-muted">Meet The Team</h1>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Vincent Abell</h4>
+                                <p class="card-text">A carpenter by trade, Vincent Abell has over 35 years experience in commercial and residential
+                                    construction. He currently serves as the on site superintendent to enssure each project
+                                    is progressing in a timely fashion and to the utmost craftsmanship. One of 15 kids, Vincent
+                                    enjoys spending time with his family at the lake, gardening, hunting, and working on
+                                    home projects.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Brad Abell</h4>
+                                <p class="card-text">Brad's construction background and business management education at Murray State University
+                                    has proven to be a winning combination for Vincent Abell Contracting. Brad enjoys working
+                                    first hand with customers from the first meeting through the duration of the project
+                                    to see thier dreams become reality. His other passion in life is wife and son. They enjoy
+                                    traveling, playing softball, and spending time outdoors.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <!-- /about -->
+        <!-- /meet the team -->
+        
 
-
-            <div class="col-lg col-xl-5">
-                <h1 class="display-4 text-center my-5 text-muted">Meet The Team</h1>
-                <!-- <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/abell_header_hammer.gif" alt="Abell"> -->
-                <p>Vincent Abell</p>
-                <p>Brad Abell</p>
-            </div>
-            <!-- /meet the team -->
-
-        </div>
+<!-- Consultation Form -->
 
         <hr>
         <div class="row py-4 text-muted">
@@ -104,15 +160,51 @@
                         <button class="btn btn-danger" type="button">Email Us</button>
                     </span>
                 </div>
-            </div>
-            <!-- /sign-up -->
-        </div>
-        <!-- /consultaion -->
+            </div><!-- /sign-up -->
+        </div><!-- /consultaion -->
 
+        <!-- footer -->
+        <div class="row py-3">
+            <div class="col-md-7"> </div>
+            <div class="col-md text-md-right">
+                <small>&copy;Vincent Abell Contracting &amp; Dominque Cox</small>
+            </div>
+        </div>
+        <!-- /footer -->
     </div>
     <!-- /container -->
 
+<!=====================================  
 
+FORM MODAL
+
+===================================== >
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="email" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Email us for a free consultaion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -122,6 +214,13 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+
+    <div id="contact" class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401000.2381700974!2d-85.84401950062328!3d38.26061132361552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869905bee8c88d5%3A0x17d6c4a49da35842!2sVincent+Abell+Contracting+Inc!5e0!3m2!1sen!2sus!4v1508281872216"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- viewable map for the user to find address quickly. -->
+
 </body>
 
 </html>
