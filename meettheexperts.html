@@ -53,10 +53,10 @@
       
     <!-- jumbotron -->
   
-    <div class="jumbotron jumbotron-fluid bg-secondary text-white">
+    <div class="jumbotron jumbotron-fluid bg-secondary text-white jumbowrap">
             <div class="container text-sm-center pt-1">
-              <h1 class="display-3">Vincent Abell Contracting</h1>
-              <p class="lead">Contact us now to set up your free consultaion.</p>        
+              <h1 class="display-3 text-center">Vincent Abell Contracting</h1>
+              <p class="lead text-center">Contact us now to set up your free consultaion.</p>        
 
               <!-- buttons in jumbotron -->
 
@@ -66,7 +66,57 @@
               </div>        
             </div>
           </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="consultaion" tabindex="-1" role="dialog" aria-labelledby="consultaion form" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get Your Free Consultation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+<!-- FORM -->
+
+            <form>
+                    <div class="form-group">
+                            <div class="form-group">
+                                    <label class="col-form-label" for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="">
+                                  </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <label for="exampleFormControlSelect2">Example multiple select</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
+  <!-- /FORM -->
+
           <!-- container -->
     <div class="container pt-4">
       
@@ -77,35 +127,42 @@
   
         <div class="row">
             <div class="col-lg">
-                <h3 class="mb-4">Louisville Remodeling Experts</h3>
+                <h3 class="mb-4 text-center">Louisville Remodeling Experts</h3>
 
-                <p>Vincent Abell Contracting is a family owned and operated full service General Contracting design-build firm
+                <p>
+                    <strong>
+                    Vincent Abell Contracting is a family owned and operated full service General Contracting design-build firm
                     specializing in custom remodeling & renovations in Louisville and surround counties. Services include
                     home additions, historic preservation, kitchens, bathrooms, basements, decks, porches, dormer additions,
-                    screen rooms, load bearing wall removal, room additions, home improvements, and more.</p>
+                    screen rooms, load bearing wall removal, room additions, home improvements, and more.
+                 </p>
 
                 <p>Since 2000, Vincent Abell Contracting's professional and experienced team members have provided expert remodeling
                     services to many of Louisville's most established neighborhoods including the Highlands, St. Matthews,
                     Audubon Park, Anchorage, Prospect, Glenview, Indian Hills, Old Louisville, Crestwood, Pewee Valley, Crescent
-                    Hill, and more. </p>
+                    Hill, and more. 
+                </strong>
+                </p>
             </div><!--/about -->
   
   
             <!-- Abell Approach -->
             
   <div class="col-lg">
-                <h3 class="mb-4">Abell Approach</h3>
-                <ol>
-                    <li> Initial Consultation: Complimentary site visit by Brad Abell. We will discuss what you want to do, when
+                <h3 class="mb-4 text-center">Abell Approach</h3>
+                <ol >
+                    <strong>
+                    <li class="mb-2"> Initial Consultation: Complimentary site visit by Brad Abell. We will discuss what you want to do, when
                         you want to do it, and project budget. </li>
-                    <li> Design: Every great project starts with a vision. It is our job to help shape your vision in to reality.
+                    <li class="mb-2"> Design: Every great project starts with a vision. It is our job to help shape your vision in to reality.
                         The design agreement is the first step in putting the plan in to action. We offer professional design-build
                         services catered to your personal wish list and budget. </li>
-                    <li> Site Visit Walk Through: After detailed construction drawings are created, our team members and required
+                    <li class="mb-2"> Site Visit Walk Through: After detailed construction drawings are created, our team members and required
                         specialty contractors will perform a site visit.</li>
-                    <li> Construction agreement: A detailed scope of work and bid package is put together for the project based
+                    <li class="mb-2"> Constructio n agreement: A detailed scope of work and bid package is put together for the project based
                         on the completed drawings and agreed upon budget.</li>
-                    <li> Construction: We pull the permit and start construciton.</li>
+                    <li class="mb-2"> Construction: We pull the permit and start construciton.</li>
+                </strong>
                 </ol> 
             </div><!-- /abell approach -->
   
@@ -113,8 +170,8 @@
             <!-- Meet the team -->
 
             <hr>
-            <div class="row py-4 text-dark">
-                <div class="col-md col-xl-5 text-center">
+            <div class="row py-2 text-dark">
+                <div class="col-md col-md-12">
                     <h1 class="display-4 text-center my-5 text-dark">Meet the Team</h1>
                 </div>
             
@@ -122,9 +179,9 @@
 
                     <div class="col-md-6 col-lg-6">
                         <div class="card mb-3">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <img class="card-img-top text-center" src="..." alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="card-title">Vincent Abell</h4>
+                                <h4 class="card-title text-center">Vincent Abell</h4>
                                 <p class="card-text">A carpenter by trade, Vincent Abell has over 35 years experience in commercial and residential
                                     construction. He currently serves as the on site superintendent to enssure each project
                                     is progressing in a timely fashion and to the utmost craftsmanship. One of 15 kids, Vincent
@@ -136,9 +193,9 @@
 
                     <div class="col-md-6">
                         <div class="card mb-3">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <img class="card-img-top text-center" src="..." alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="card-title">Brad Abell</h4>
+                                <h4 class="card-title text-center">Brad Abell</h4>
                                 <p class="card-text">Brad's construction background and business management education at Murray State University
                                     has proven to be a winning combination for Vincent Abell Contracting. Brad enjoys working
                                     first hand with customers from the first meeting through the duration of the project
@@ -158,10 +215,10 @@
         <hr>
         <div class="row py-4 text-dark">
             <div class="col-md col-xl-5">
-                <h1 class="display-4 text-center my-5 text-dark">Consultation</h1>
+                <h1 class="display-4 text-center my-2 text-dark">Consultation</h1>
             </div>
             <div class="col-lg col-xl-5 ml-auto">
-                <p>
+                <p class="text-center">
                     <strong> A complimentary site visit helps you discuss what you want to do, when you want to do it, and how you
                         can budget your project!</strong>
                 </p>
@@ -176,9 +233,9 @@
     </div><!-- /background wallpaper -->
 
         <!-- footer -->
-        <div class="row py-3">
+        <div class="py-3">
             <div class="col-md-7"> </div>
-            <div class="col-md text-md-right">
+            <div class="col-md text-lg-center text-center">
                 <small>&copy;Vincent Abell Contracting &amp; Dominque Cox</small>
             </div>
         </div>
