@@ -10,7 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="css/strap.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="css/strap.css">
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                     <a class="nav-link" href="meettheexperts.html">Meet The Experts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -52,8 +55,7 @@
         
       
     <!-- jumbotron -->
-  
-    <div class="jumbotron jumbotron-fluid bg-secondary text-white jumbowrap">
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
             <div class="container text-sm-center pt-1">
               <h1 class="display-3 text-center">Vincent Abell Contracting</h1>
               <p class="lead text-center">Contact us now to set up your free consultaion.</p>        
@@ -61,64 +63,16 @@
               <!-- buttons in jumbotron -->
 
               <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-                <button type="button" class="btn btn-primary btn-lg">Consultation</button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#consultaion">Consultation</button>
                 <a class="btn btn-light btn-lg" href="#speakers">Meet the Team</a>
               </div>        
             </div>
-          </div>
+          </div> <!-- /jumbotron  -->
+        
 
-
-<!-- Modal -->
-<div class="modal fade" id="consultaion" tabindex="-1" role="dialog" aria-labelledby="consultaion form" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Get Your Free Consultation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-
-<!-- FORM -->
-
-            <form>
-                    <div class="form-group">
-                            <div class="form-group">
-                                    <label class="col-form-label" for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="">
-                                  </div>
-                <div class="form-group">
-                  <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                </div>
-                <label for="exampleFormControlSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- /FORM -->
 
           <!-- container -->
-    <div class="container pt-4">
+    <div class="container pt-4 text-black">
       
       
        
@@ -170,7 +124,7 @@
             <!-- Meet the team -->
 
             <hr>
-            <div class="row py-2 text-dark">
+            <div id="speakers" class="row py-2 text-dark">
                 <div class="col-md col-md-12">
                     <h1 class="display-4 text-center my-5 text-dark">Meet the Team</h1>
                 </div>
@@ -213,9 +167,9 @@
 <!-- Consultation Form -->
 
         <hr>
-        <div class="row py-4 text-dark">
+        <div class="row py-3 text-dark">
             <div class="col-md col-xl-5">
-                <h1 class="display-4 text-center my-2 text-dark">Consultation</h1>
+                <h1 class="display-4 text-center my-2 text-dark">Contact Us</h1>
             </div>
             <div class="col-lg col-xl-5 ml-auto">
                 <p class="text-center">
@@ -228,20 +182,29 @@
                         <button class="btn btn-danger" type="button">Email Us</button>
                     </span>
                 </div>
-            </div><!-- /sign-up -->
-        </div><!-- /consultaion -->
+            </div>
+        </div> 
+        <!-- /sign-up -->
+        <!-- /consultaion -->
+
     </div><!-- /background wallpaper -->
 
-        <!-- footer -->
-        <div class="py-3">
-            <div class="col-md-7"> </div>
-            <div class="col-md text-lg-center text-center">
-                <small>&copy;Vincent Abell Contracting &amp; Dominque Cox</small>
+    
+        <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto my-3" data-toggle="modal" data-target="#consultaion">Questions About Your Project, Consult Us Now</button>
+    
+            <!-- footer -->
+            <div class="py-3">
+                <div class="col-md-6"> </div>
+                <div class="col-md text-lg-center text-center text-black">
+                    <small>&copy;Vincent Abell Contracting &amp; Developed By: Dominque Cox 2017</small>
+                </div>
             </div>
-        </div>
-        <!-- /footer -->
+            <!-- /footer -->
+
     </div>
     <!-- /container -->
+
+
 
 <!=====================================  
 
@@ -249,31 +212,52 @@ FORM MODAL
 
 ===================================== >
 
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-      </button> -->
-      
-      <!-- Modal -->
-      <!-- <div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="email" aria-hidden="true">
+<div class="modal fade" id="consultaion" tabindex="-1" role="dialog" aria-labelledby="consultaion form" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Email us for a free consultaion</h5>
+            <div class="modal-header bg-success text-white">
+              <h5 class="modal-title" id="consultaion">Get Your Free Consultation</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+    
+    <!-- FORM -->
+    
+                <form>
+                        <div class="form-group">
+                                <div class="form-group">
+                                        <label class="col-form-label" for="name">Name:</label>
+                                        <input type="text" class="form-control" id="name">
+                                      </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <label for="details">Details About Your Project:</label>
+                    <select class=" custom-select form-control" id="consultaion">
+                      <option value="Remodeling">Remodeling</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Any Additional Comments:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  
+                  <hr class="mb-4">
+                  <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                </form>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
+      
+      <!-- /FORM -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -286,7 +270,7 @@ FORM MODAL
 
     <div id="contact" class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401000.2381700974!2d-85.84401950062328!3d38.26061132361552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869905bee8c88d5%3A0x17d6c4a49da35842!2sVincent+Abell+Contracting+Inc!5e0!3m2!1sen!2sus!4v1508281872216"
-            width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+            width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <!-- viewable map for the user to find address quickly. -->
 
