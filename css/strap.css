@@ -1,11 +1,18 @@
 
 
+ /* ID Selectors */
+ #contact {
+    height: 0; 
+}
 
+/* Navigation */
 .navbar .navbar-brand {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1rem;
   }
 
+
+  /* Jumbotron Header Image */
   .jumbotron {
   margin-bottom: 0px;
   background-image: url('../img/abellbg2.jpg');
@@ -15,14 +22,8 @@
   text-shadow: rgb(0, 0, 0).3em 0.3em 0.3em;
   }
 
-/* .backwrap {
-background-image: url('../../img/abellbackground.jpg'); 
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center; 
-color: #000;
-} */
 
+  /* Background Image  */
 	
 .backwrap {
     position: relative;
@@ -42,6 +43,10 @@ color: #000;
      z-index: -1;
  }
 
- #contact {
-     height: 0; 
- }
+/* Container Background For Better Visibility */
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+}

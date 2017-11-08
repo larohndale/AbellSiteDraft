@@ -34,16 +34,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Team Abell</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
+    
                 <li class="nav-item">
-                    <a class="nav-link" href="meettheexperts.html">Meet The Experts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#cont">Contact</a>
                 </li>
             </ul>
         </div>
@@ -78,8 +73,7 @@
        
        
         <!-- About -->
-  
-        <div class="row">
+            <div class="overlay col-lg row">
             <div class="col-lg">
                 <h3 class="mb-4 text-center">Louisville Remodeling Experts</h3>
 
@@ -118,8 +112,9 @@
                     <li class="mb-2"> Construction: We pull the permit and start construciton.</li>
                 </strong>
                 </ol> 
+            </div><!-- /overlay -->
             </div><!-- /abell approach -->
-  
+    
             
             <!-- Meet the team -->
 
@@ -134,7 +129,7 @@
                     <div class="col-md-6 col-lg-6">
                         <div class="card mb-3">
                             <img class="card-img-top text-center" src="img/vincentcard.jpg" alt="Vincnet Abell">
-                            <div class="card-body">
+                            <div class=" card-body">
                                 <h4 class="card-title text-center">Vincent Abell</h4>
                                 <p class="card-text">A carpenter by trade, Vincent Abell has over 35 years experience in commercial and residential
                                     construction. He currently serves as the on site superintendent to enssure each project
@@ -164,22 +159,32 @@
         <!-- /meet the team -->
         
 
-<!-- Consultation Form -->
+<!-- Contact -->
+
 
         <hr>
-        <div class="row py-3 text-dark">
-            <div class="col-md col-xl-5">
-                <h1 class="display-4 text-center my-2 text-dark">Contact Us</h1>
-            </div>
-            <div class="col-lg col-xl-5 ml-auto">
+        <div class="overlay col-lg row">
+                <div class="col-lg">
+                    <h1 class="mb-4 text-center" id="cont">Contact Us</h1>
                 <p class="text-center">
                     <strong> A complimentary site visit helps you discuss what you want to do, when you want to do it, and how you
                         can budget your project!</strong>
                 </p>
-            </div>
-        </div> 
-        <!-- /sign-up -->
-        <!-- /consultaion -->
+                </div>
+
+        <div class="col-lg">
+                <ul class="text-left col-lg ml-5">
+                    <strong>
+                    <li class="mb-2"> Phone </li>
+                    <li class="mb-2"> Email </li>
+                    <li class="mb-2"> Facebook</li>
+                    <li class="mb-2"> Angies List</li>
+                </strong>
+                </ul> 
+            </div><!-- /overlay -->
+            </div><!-- /abell approach -->
+       
+        <!-- /contact-->
 
     </div><!-- /background wallpaper -->
 
@@ -254,6 +259,24 @@ FORM MODAL
       <!-- /FORM -->
 
     <!-- Optional JavaScript -->
+
+ 
+    <!-- <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script> -->
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
