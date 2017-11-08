@@ -1,13 +1,26 @@
-This is a read me for the Abell Contracting Website Developed By: Dominque Cox. 
+# Vincent Abell Contracting 
 
-Website Target Completion Date: 11-10-2017
+This instructions will give you insight to the process that went in to creating the site.
 
-Scrapped the website and started from scratch while maaintaining Brad's approach to the site. The site was built on another platform named SandBox. I have went from scratch and created custom css, javascript, and I have manipulated a few html elements. The goal of the site was to maintain all concepts the site original conveyed while giving it a refreshing modern look. 
+## Getting Started
+This site was created for a contracting company based in Louisville. To navigate the page the user can view the approach the contractors have to their business. Users are able to stay on one page for the majority of the content. They can navigate to the consultation form as well as meet the team and contact them all on the homepage. The user will have to go to another Portfolio page to view the contractors previous projects. 
 
-<<<<<<< HEAD
- <!-- The functionality and better styling of the site will be completed during the second cohert of Code Louisville! -->
-=======
+## Built With
 
- 
- <!-- The functionality and better styling of the site will be completed during the second cohert of Code Louisville! -->
->>>>>>> 0134b937e32d2421df1188ce12100c80d597ba1c
+* Custom HTML and CSS - Used to give the site a modern look as well as short some content to allow for a two page setup covering all the necessary requirements the client wants. 
+
+* JavaScript-Used to add a form that allows the user to submit an email using MailChimp to the business owner to filter needs that each client has. 
+
+* Framework used in the development was Bootstrap and its SASS styling snippets. This allowed for the site to keeps its custom css while implenting sass to make the visual more appealing and the customer to have a responvsive site to scale on different devices. 
+
+## Authors
+
+* **Dominque Cox ** -(https://github.com/larohndale)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Inspiration was from the Code Louisville Front-End Development Track
