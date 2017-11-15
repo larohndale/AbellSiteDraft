@@ -84,3 +84,13 @@
     .contact-links a:hover {
         color: rgb(249, 252, 248);
     }
+
+    /* Contact Logos */
+
+
+    .social-icon {
+        display: inline; /* Here */
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+      }
