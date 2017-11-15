@@ -94,3 +94,9 @@
         height: 20px;
         margin: 0 5px;
       }
+
+      /* Hammer */
+
+      .hammer-logo {
+        background-position: 50% 0;
+          }
